@@ -1,5 +1,9 @@
 This fork fixes the problems inherent with the original ctcdecode: https://github.com/parlance/ctcdecode
 
+Fix for ```RuntimeError: Not enough space``` used from https://github.com/parlance/ctcdecode/issues/124
+
+## FROM ORIGINAL CTCDECODE:
+
 # ctcdecode
 
 ctcdecode is an implementation of CTC (Connectionist Temporal Classification) beam search decoding for PyTorch.
