@@ -1,3 +1,5 @@
+This fork fixes the problems inherent with the original ctcdecode: https://github.com/parlance/ctcdecode
+
 # ctcdecode
 
 ctcdecode is an implementation of CTC (Connectionist Temporal Classification) beam search decoding for PyTorch.
