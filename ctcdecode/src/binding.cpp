@@ -7,9 +7,10 @@
 #include "ctc_beam_search_decoder.h"
 #include "utf8.h"
 
-int utf8_to_utf8_char_vec(const char* labels, std::vector<std::string>& new_vocab) {
+void utf8_to_utf8_char_vec(const char* labels, std::vector<std::string>& new_vocab) {
     const char* str_i = labels;
-    const char* end = str_i + strlen(labels)+1;
+    // const char* end = str_i + strlen(labels)+1;
+    const char* end = str_i + strlen(labels);
     do {
         char u[5] = {0,0,0,0,0};
         uint32_t code = utf8::next(str_i, end);
